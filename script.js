@@ -5,7 +5,7 @@ const quizData = [
         correct: "12/07/2024"
     },
     {
-        question: "Onde foi nosso primeiro encontro (dessa vez)?",
+        question: "Onde foi nosso primeiro encontro (No nosso 5º reencontro kkk)?",
         options: ["Save the Burger", "Praça Silvio (Silva) Romero", "Cabana Burger", "Jardim de Napoli"],
         correct: "Cabana Burger"
     },
@@ -45,24 +45,21 @@ function loadQuestion() {
     document.getElementById('feedback').textContent = '';
 }
 
-function checkAnswer(selected) {
-    const correct = quizData[currentQuestion].correct;
-    const feedback = document.getElementById('feedback');
-
-    if (selected === correct) {
-        feedback.textContent = "Acertou!";
+function checkAnswer(selectedOption) {
+    const currentQuiz = quizData[currentQuestion];
+    if (selectedOption === currentQuiz.correct) {
         currentQuestion++;
         if (currentQuestion < quizData.length) {
-            setTimeout(loadQuestion, 1000);
+            setTimeout(loadQuestion, 500);
         } else {
-          document.getElementById('quiz-container').classList.add('hidden');
-          document.getElementById('gift-container').classList.remove('hidden');
-
+            document.getElementById('quiz-container').classList.add('hidden');
+            document.getElementById('gift-container').classList.remove('hidden');
         }
     } else {
-        feedback.textContent = "Ops! Tenta de novo!";
+        alert("Resposta errada! Tente novamente ❤️");
     }
 }
+
 function revealRoulette() {
     document.getElementById('gift-container').classList.add('hidden');
     document.getElementById('roulette-container').classList.remove('hidden');
