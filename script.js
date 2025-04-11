@@ -10,7 +10,17 @@ const quizData = [
         correct: "Cabana Burger"
     },
     {
-        question: "Quem é o amor da minha vida?",
+        question: "Qual é nosso dia preferido da semana?",
+        options: ["Sexta", "Domingo", "Quarta", "Sábado"],
+        correct: "Quarta"
+    },
+    {
+        question: "Quem é o mais lindo, gostoso, cheiroso, engraçado, amor da sua vida?",
+        options: ["Cristiano Ronaldo", "Rodrigo Lomardi", "Dennys", "Michael B Jordan"],
+        correct: "Dennys"
+    },
+    {
+        question: "Quem é o amor da vida do Dennys?",
         options: ["Ester", "Neymar Jr.", "SPFC", "Call of Duty"],
         correct: "Ester"
     }
