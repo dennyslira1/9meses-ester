@@ -53,7 +53,10 @@ function checkAnswer(selected) {
         feedback.textContent = "Ops! Tenta de novo!";
     }
 }
-
+function revealRoulette() {
+    document.getElementById('gift-container').classList.add('hidden');
+    document.getElementById('roulette-container').classList.remove('hidden');
+}
 const dinnerOptions = ["🍕 Pizza", "🍣 Sushi", "🥩 Churrasco", "🍔 Hambúrguer", "🍝 Massas"];
 
 function spinRoulette() {
