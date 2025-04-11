@@ -67,7 +67,7 @@ function spinRoulette() {
     }, 3000);
 }
 
-const slides = ["img1.jpg", "img2.jpg", "img3.jpg"];
+const slides = ["img1.heic", "img2.heic", "img3.jpg","img4.heic","img5.heic"];
 let currentSlide = 0;
 
 function startSlideshow() {
