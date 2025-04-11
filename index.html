@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Nosso Quiz Especial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Nosso Desafio do Amor</h1>
+        <p>Responda corretamente e descubra onde vamos jantar!</p>
+    </header>
+
+    <main>
+        <!-- Quiz com alternativas -->
+        <div id="quiz-container" class="quiz">
+            <p id="question">Carregando pergunta...</p>
+            <div id="options"></div>
+            <p id="feedback"></p>
+        </div>
+
+        <!-- Roleta -->
+        <div id="roulette-container" class="hidden">
+            <h2>Hora de decidir onde vamos jantar!</h2>
+            <button onclick="spinRoulette()">Girar Roleta</button>
+            <p id="roulette-result"></p>
+        </div>
+
+        <!-- Slideshow -->
+        <div id="slideshow-container" class="hidden">
+            <h2>Nossas Memórias</h2>
+            <div class="slideshow">
+                <img id="slide" src="img1.jpg" alt="Foto 1">
+            </div>
+        </div>
+
+        <!-- Música -->
+        <div id="music-container" class="hidden">
+            <h2>Nossa Música</h2>
+            <audio controls>
+                <source src="nossa-musica.mp3" type="audio/mpeg">
+                Seu navegador não suporta áudio.
+            </audio>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
