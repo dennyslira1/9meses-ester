@@ -70,15 +70,27 @@ function revealRoulette() {
 const dinnerOptions = ["🍕 Pizza", "🍣 Sushi", "🥩 Churrasco", "🍔 Hambúrguer", "🍝 Massas"];
 
 function spinRoulette() {
-    const randomIndex = Math.floor(Math.random() * dinnerOptions.length);
-    const result = dinnerOptions[randomIndex];
-    document.getElementById('roulette-result').textContent = `Vamos jantar: ${result}!`;
+    const rouletteResult = document.getElementById('roulette-result');
+    const totalSpins = 20; // número de "giros"
+    let spinCount = 0;
 
-    setTimeout(() => {
-        document.getElementById('roulette-container').classList.add('hidden');
-        document.getElementById('slideshow-container').classList.remove('hidden');
-        startSlideshow();
-    }, 3000);
+    const spinInterval = setInterval(() => {
+        const random = dinnerOptions[Math.floor(Math.random() * dinnerOptions.length)];
+        rouletteResult.textContent = `Girando... ${random}`;
+        spinCount++;
+
+        if (spinCount >= totalSpins) {
+            clearInterval(spinInterval);
+            rouletteResult.textContent = `Vamos jantar: 🍕 Pizza!`;
+
+            // Mostrar o slideshow depois de 3 segundos
+            setTimeout(() => {
+                document.getElementById('roulette-container').classList.add('hidden');
+                document.getElementById('slideshow-container').classList.remove('hidden');
+                startSlideshow();
+            }, 3000);
+        }
+    }, 100); // velocidade da "roleta"
 }
 
 const slides = ["img1.jpg", "img2.jpg", "img3.jpg","img4.jpg","img5.jpg"];
