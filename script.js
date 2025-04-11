@@ -1,4 +1,3 @@
-// Perguntas com alternativas
 const quizData = [
     {
         question: "Qual a nossa data de aniversário de namoro?",
@@ -28,7 +27,7 @@ function loadQuestion() {
 
     q.options.forEach(option => {
         const btn = document.createElement('button');
-        btn.textContent = option;
+        btn.textContent = `❤️ ${option}`;
         btn.onclick = () => checkAnswer(option);
         optionsDiv.appendChild(btn);
     });
@@ -54,8 +53,7 @@ function checkAnswer(selected) {
     }
 }
 
-// Roleta
-const dinnerOptions = ["Pizza", "Sushi", "Churrasco", "Hambúrguer", "Massas"];
+const dinnerOptions = ["🍕 Pizza", "🍣 Sushi", "🥩 Churrasco", "🍔 Hambúrguer", "🍝 Massas"];
 
 function spinRoulette() {
     const randomIndex = Math.floor(Math.random() * dinnerOptions.length);
@@ -69,7 +67,6 @@ function spinRoulette() {
     }, 3000);
 }
 
-// Slideshow
 const slides = ["img1.jpg", "img2.jpg", "img3.jpg"];
 let currentSlide = 0;
 
@@ -81,5 +78,4 @@ function startSlideshow() {
     }, 3000);
 }
 
-// Inicia quiz ao carregar
 window.onload = loadQuestion;
