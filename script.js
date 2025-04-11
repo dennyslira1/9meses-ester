@@ -1,18 +1,18 @@
 const quizData = [
     {
         question: "Qual a nossa data de aniversário de namoro?",
-        options: ["14/02/2020", "12/06/2020", "01/01/2020", "25/12/2019"],
-        correct: "14/02/2020"
+        options: ["25/07/2024", "12/06/2024", "04/05/2024", "12/07/2024"],
+        correct: "12/07/2024"
     },
     {
-        question: "Qual foi o nosso primeiro filme juntos?",
-        options: ["La La Land", "Titanic", "O Rei Leão", "Top Gun"],
-        correct: "La La Land"
+        question: "Onde foi nosso primeiro encontro (dessa vez)?",
+        options: ["Save the Burger", "Praça Silvio (Silva) Romero", "Cabana Burger", "Jardim de Napoli"],
+        correct: "Cabana Burger"
     },
     {
-        question: "Qual a cor da sua camisa no nosso primeiro encontro?",
-        options: ["Azul", "Branca", "Vermelha", "Preta"],
-        correct: "Azul"
+        question: "Quem é o amor da minha vida?",
+        options: ["Ester", "Neymar Jr.", "SPFC", "Call of Duty"],
+        correct: "Ester"
     }
 ];
 
