@@ -16,7 +16,7 @@ const quizData = [
     },
     {
         question: "Quem é o mais lindo, gostoso, cheiroso, engraçado, amor da sua vida?",
-        options: ["Cristiano Ronaldo", "Rodrigo Lomardi", "Dennys", "Michael B Jordan"],
+        options: ["Cristiano Ronaldo", "Rodrigo Lombardi", "Dennys", "Michael B. Jordan"],
         correct: "Dennys"
     },
     {
@@ -91,7 +91,7 @@ const slideshowImages = [
     { src: "img1.jpg", caption: "Nossa noite perfeita" },
     { src: "img2.jpg", caption: "Aquela viagem especial" },
     { src: "img3.jpg", caption: "Dia perfeito com você 🌅" },
-    { src: "img4.jpg", caption: "Você é a mais Gata ❤️"" },
+    { src: "img4.jpg", caption: "Você é a mais Gata ❤️" },
     { src: "img5.jpg", caption: "Nossa Casinha" }
 
 ];
