@@ -45,8 +45,9 @@ function checkAnswer(selected) {
         if (currentQuestion < quizData.length) {
             setTimeout(loadQuestion, 1000);
         } else {
-            document.getElementById('quiz-container').classList.add('hidden');
-            document.getElementById('roulette-container').classList.remove('hidden');
+          document.getElementById('quiz-container').classList.add('hidden');
+          document.getElementById('gift-container').classList.remove('hidden');
+
         }
     } else {
         feedback.textContent = "Ops! Tenta de novo!";
